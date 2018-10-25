@@ -6,11 +6,11 @@
 
 #define N 6
 
-struct Node {
-    Node *head = NULL;
-    int data = 0;
-    Node *next = NULL;
-};
+typedef struct Node {
+    struct Node *head;
+    int data;
+    struct Node *next;
+} Node;
 
 typedef Node *List;
 
